@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/static/css/style.css" />
+
+<div class="navbar">
+  <h2>Amazon Clone</h2>
+  <a href="/cart/">Cart</a>
+</div>
+
+<form method="GET">
+  <input name="q" placeholder="Search" />
+  <button>Search</button>
+</form>
+
+<div class="products">
+  {% for product in products %}
+  <div class="card">
+    <h3>{{ product.name }}</h3>
+    <p>₹{{ product.price }}</p>
+    <a href="/add-to-cart/{{ product.id }}"><button>Add</button></a>
+  </div>
+  {% endfor %}
+</div>

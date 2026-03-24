@@ -1,0 +1,28 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #eaeded;
+}
+.navbar {
+  background: #131921;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+button {
+  background: #ffd814;
+  border: none;
+  padding: 8px;
+}
